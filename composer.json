@@ -1,0 +1,55 @@
+{
+    "name": "mvdnbrk/laravel-bolcom",
+    "description": "Bol.com API v4",
+    "keywords": [
+        "laravel",
+        "bol.com"
+    ],
+    "homepage": "https://github.com/mvdnbrk/laravel-bolcom",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mark van den Broek",
+            "email": "mvdnbrk@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^7.2",
+        "illuminate/cache": "^8.0",
+        "illuminate/collections": "^8.0",
+        "illuminate/http": "^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mvdnbrk\\Laravel\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mvdnbrk\\Laravel\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mvdnbrk\\Laravel\\BolcomServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
