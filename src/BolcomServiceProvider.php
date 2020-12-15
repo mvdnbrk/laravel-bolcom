@@ -10,13 +10,13 @@ class BolcomServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__ . '/../config/bol.php' => config_path('bol.php'),
+                __DIR__.'/../config/bol.php' => config_path('bol.php'),
             ], 'config');
         }
     }
 
     public function register(): void
     {
-        $this->mergeConfigFrom(__DIR__ . '/../config/bol.php', 'bol');
+        $this->mergeConfigFrom(__DIR__.'/../config/bol.php', 'bol');
     }
 }
