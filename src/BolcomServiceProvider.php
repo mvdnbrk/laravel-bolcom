@@ -11,7 +11,7 @@ class BolcomServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->publishes([
                 __DIR__.'/../config/bol.php' => config_path('bol.php'),
-            ], 'config');
+            ], 'bolcom-config');
         }
     }
 
