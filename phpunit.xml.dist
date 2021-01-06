@@ -8,4 +8,7 @@
             <directory>tests</directory>
         </testsuite>
     </testsuites>
+    <php>
+        <server name="CACHE_DRIVER" value="file"/>
+    </php>
 </phpunit>
