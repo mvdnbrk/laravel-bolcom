@@ -7,6 +7,8 @@
 [![Code style][ico-code-style]][link-code-style]
 [![Total Downloads][ico-downloads]][link-downloads]
 
+[Bol.com API documentation](https://api.bol.com/retailer/public/Retailer-API/index.html)
+
 ## Installation
 
 You can install the package via composer:
