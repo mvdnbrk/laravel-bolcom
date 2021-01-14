@@ -1,9 +1,10 @@
 <?php
 
-namespace Mvdnbrk\Laravel\Tests;
+namespace Mvdnbrk\Laravel\Bolcom\Tests;
 
-use Mvdnbrk\Laravel\BolcomServiceProvider;
+use Mvdnbrk\Laravel\Bolcom\BolcomServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
+use Spatie\LaravelRay\RayServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -11,6 +12,7 @@ class TestCase extends Orchestra
     {
         return [
             BolcomServiceProvider::class,
+            RayServiceProvider::class,
         ];
     }
 }

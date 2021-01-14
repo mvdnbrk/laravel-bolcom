@@ -1,6 +1,6 @@
 <?php
 
-namespace Mvdnbrk\Laravel;
+namespace Mvdnbrk\Laravel\Bolcom;
 
 use Illuminate\Support\ServiceProvider;
 
