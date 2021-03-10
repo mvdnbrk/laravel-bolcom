@@ -17,6 +17,10 @@ jobs:
 
     name: PHP ${{ matrix.php }} - Laravel ${{ matrix.laravel }} - ${{ matrix.stability }}
 
+    env:
+      BOL_CLIENT_ID: ${{ secrets.BOL_CLIENT_ID }}
+      BOL_SECRET: ${{ secrets.BOL_SECRET }}
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
